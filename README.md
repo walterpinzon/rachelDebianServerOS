@@ -21,16 +21,23 @@ Ntp
 
 
 Install Debian 8.11 Jessie 64bit server version whit 
-user: pi
-password: rachel 
-and hostname: rachel
 
-verify /etc/apt/source.list
+`user: pi`
 
-apt-get update
-apt-get upgrade
+`password: rachel`
 
-apt-get install phyton curl sudo
+and `hostname: rachel`
+
+`verify /etc/apt/source.list`
+
+`apt-get update`
+
+`apt-get upgrade`
+
+
+`apt-get install phyton curl sudo`
+
+
 Manually download the RachelpiOS master project
 
 Upload to server
@@ -43,7 +50,9 @@ Install
 To install is easy:
 
 Expand your microSD card partition
+
 `sudo raspi-config`
+
 `sudo reboot`
 
 NOTE: for WIFI to ever work on the unit, you must have the WIFI USB dongle inserted
