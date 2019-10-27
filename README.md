@@ -19,6 +19,9 @@ Curl
 Sudo
 Ntp
 
+Download Debian Jessie.
+
+`https://www.debian.org/releases/jessie/`
 
 Install Debian 8.11 Jessie 64bit server version whit 
 
