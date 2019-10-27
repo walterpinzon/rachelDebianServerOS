@@ -1,4 +1,4 @@
-rachelpiOS
+rachelDebianServerOS 64bits
 ---------------
 
 
