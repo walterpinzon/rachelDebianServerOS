@@ -1,7 +1,20 @@
 rachelpiOS
 ---------------
 
-*NOTE: This install is tested to work with `2016-05-27-raspbian-jessie` and is known to have problems with newer versions*
+
+
+Prerequisites
+---------------
+Debian Jessie Server
+
+Phyton
+Phyton
+Sudo
+
+
+
+Install
+---------------
 
 To install is easy:
 
