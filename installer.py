@@ -39,7 +39,7 @@ def install_kalite():
 def install_kiwix():
 	sudo("mkdir -p /var/kiwix/bin") or die("Unable to make create kiwix directories")
 	kiwix_version = "0.9"
-	sudo("sh -c 'wget -O - http://downloads.sourceforge.net/project/kiwix/"+kiwix_version+"/kiwix-server-"+kiwix_version+"-linux-armv5tejl.tar.bz2 | tar xj -C /var/kiwix/bin'") or die("Unable to download kiwix-server")
+	sudo("sh -c 'wget -O - http://download.kiwix.org/bin/kiwix-linux-x86_64.tar.bz2 | tar xj -C /var/kiwix/bin'") or die("Unable to download kiwix-server")
 	# the reason we have a sample zim file is so that if no modules
 	# are installed you can still tell that kiwix is running
 	cp("files/kiwix-sample.zim", "/var/kiwix/sample.zim") or die("Unable to install kiwix sample zim")
@@ -107,8 +107,8 @@ sudo("apt-get dist-upgrade -y") or die("Unable to upgrade Raspbian.")
 
 
 # Update Raspi firmware
-if not is_vagrant():
-	sudo("yes | sudo rpi-update") or die("Unable to upgrade Raspberry Pi firmware")
+#if not is_vagrant():
+#	sudo("yes | sudo rpi-update") or die("Unable to upgrade Raspberry Pi firmware")
 
 # Setup wifi hotspot
 if wifi_present() and args.install_wifi:
