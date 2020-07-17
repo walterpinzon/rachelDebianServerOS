@@ -106,7 +106,9 @@ NOW COPY YOUR MODULES IN /var/www/modules/
 
 `sh /var/www/modules/es-kalite/finish_install.sh  `
 
+`chmod -R 777 /var/www/`
 
+`init 6`
 
 All default username and passwords will be rachel/rachel unless noted differently.
 
