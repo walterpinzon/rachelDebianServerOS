@@ -53,7 +53,7 @@ Add the following lines replacing eth0 with the name of the ethernet interface.
 `apt-get upgrade`
 
 
-`apt-get install python curl sudo`
+`apt-get install python curl sudo git`
 
 
 Manually download the RachelpiOS master project
