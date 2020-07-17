@@ -77,6 +77,16 @@ Reconfigure interfaces, repeating the step above "Configure Network Interface", 
 `iptables-restore < /etc/iptables.ipv4.nat`
 
 
+`nano /etc/rc.local`
+
+`ifconfig wlan0 10.10.10.10`
+
+`service udhcpd restart`
+
+`iptables-restore < /etc/iptables.ipv4.nat`
+
+`exit 0`
+
 Please note that this will change the 'pi' user's password to: rachel
 
 All default username and passwords will be rachel/rachel unless noted differently.
