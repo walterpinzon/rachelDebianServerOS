@@ -14,10 +14,11 @@ Prerequisites
 ---------------
 Debian Jessie Server
 
-Phyton
-Curl
-Sudo
-Ntp
+python
+curl
+sudo
+ntp
+git
 
 Download Debian Jessie.
 
@@ -52,33 +53,19 @@ Add the following lines replacing eth0 with the name of the ethernet interface.
 
 `apt-get upgrade`
 
-
 `apt-get install python curl sudo git`
 
-
-Manually download the RachelpiOS master project
-
-Upload to server
-
-
-
-Install
+Download installer and install.
 ---------------
 
-To install is easy:
+Manually download the rachelDebianServerOS master project of https://github.com/walterpinzon/rachelDebianServerOS/
+and Upload to server
 
-Expand your microSD card partition
-
-`sudo raspi-config`
-
-`sudo reboot`
-
-NOTE: for WIFI to ever work on the unit, you must have the WIFI USB dongle inserted
-during installation so that the install script can configure it properly.
-
-paste in the following command after reboot.
-
-`curl -fsS https://raw.githubusercontent.com/rachelproject/rachelpiOS/master/installer.py | python`
+or type:
+`cd /home/pi/`
+`git clone https://github.com/walterpinzon/rachelDebianServerOS.git`
+`cd rachelDebianServerOS/`
+`python install.py`
 
 Please note that this will change the 'pi' user's password to: rachel
 
