@@ -46,7 +46,6 @@ Add the following lines replacing eth0 with the name of the ethernet interface.
 
 `/etc/init.d/networking restart`
 
-
 `verify /etc/apt/source.list`
 
 `apt-get update`
@@ -58,13 +57,16 @@ Add the following lines replacing eth0 with the name of the ethernet interface.
 Download installer and install.
 ---------------
 
-Manually download the rachelDebianServerOS master project of https://github.com/walterpinzon/rachelDebianServerOS/
-and Upload to server
+Manually download the rachelDebianServerOS master project of https://github.com/walterpinzon/rachelDebianServerOS/ and Upload to server
 
 or type:
+
 `cd /home/pi/`
+
 `git clone https://github.com/walterpinzon/rachelDebianServerOS.git`
+
 `cd rachelDebianServerOS/`
+
 `python install.py`
 
 Please note that this will change the 'pi' user's password to: rachel
@@ -73,14 +75,22 @@ All default username and passwords will be rachel/rachel unless noted differentl
 
 `IMPORTANT: The next comand remover modules folder. Move that before install `
 python installer.py
+
 apt upgrade
+
 apt-get install -y python-pip
+
 pip install ka-lite-static
 
+
 See interfaces
+
 Ifconfig -a
+
 nano /etc/network/interfaces
+
 #example
+
 auto up eth0
 
 
