@@ -31,6 +31,21 @@ Install Debian 8.11 Jessie 64bit server version whit
 
 and `hostname: rachel`
 
+Configure Network Interface.
+---------------
+To look at the list of interface names, type.
+
+`ifconfig -a`
+
+`su`
+`nano /etc/network/interfaces`
+Add the following lines replacing eth0 with the name of the ethernet interface.
+`    auto eth0`
+`    iface eth0 inet dhcp`
+
+`/etc/init.d/networking restart`
+
+
 `verify /etc/apt/source.list`
 
 `apt-get update`
@@ -38,7 +53,7 @@ and `hostname: rachel`
 `apt-get upgrade`
 
 
-`apt-get install phyton curl sudo`
+`apt-get install python curl sudo`
 
 
 Manually download the RachelpiOS master project
