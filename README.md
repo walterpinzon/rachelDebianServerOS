@@ -69,6 +69,14 @@ or type:
 
 `python install.py`
 
+
+Reconfigure interfaces, repeating the step above "Configure Network Interface", and them type:
+
+`echo 1 > /proc/sys/net/ipv4/ip_forward`
+
+`iptables-restore < /etc/iptables.ipv4.nat`
+
+
 Please note that this will change the 'pi' user's password to: rachel
 
 All default username and passwords will be rachel/rachel unless noted differently.
