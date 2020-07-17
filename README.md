@@ -67,6 +67,8 @@ or type:
 
 `cd rachelDebianServerOS/`
 
+IMPORTANT: The next comand remover modules folder. Move that before install or reinstall.
+
 `python install.py`
 
 
@@ -76,6 +78,7 @@ Reconfigure interfaces, repeating the step above "Configure Network Interface", 
 
 `iptables-restore < /etc/iptables.ipv4.nat`
 
+Now configure iptables persistent
 
 `nano /etc/rc.local`
 
@@ -85,13 +88,31 @@ Reconfigure interfaces, repeating the step above "Configure Network Interface", 
 
 `iptables-restore < /etc/iptables.ipv4.nat`
 
+`/var/kiwix/bin/rachel-kiwix-start.pl`
+
+
 `exit 0`
 
 Please note that this will change the 'pi' user's password to: rachel
 
+
+NOW COPY YOUR MODULES IN /var/www/modules/
+
+`rm -rf /var/kiwix/`
+
+`cp /home/pi/kiwix/ /var/`
+
+`cp /home/pi/es-kalite/finish_install.sh /var/www/modules/es-kalite/finish_install.sh  `
+
+`sh /var/www/modules/es-kalite/finish_install.sh  `
+
+
+
 All default username and passwords will be rachel/rachel unless noted differently.
 
-`IMPORTANT: The next comand remover modules folder. Move that before install `
+
+
+
 python installer.py
 
 apt upgrade
@@ -101,15 +122,7 @@ apt-get install -y python-pip
 pip install ka-lite-static
 
 
-See interfaces
 
-Ifconfig -a
-
-nano /etc/network/interfaces
-
-#example
-
-auto up eth0
 
 
 
