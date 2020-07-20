@@ -52,7 +52,7 @@ Add the following lines replacing eth0 with the name of the ethernet interface.
 
 `apt-get upgrade`
 
-`apt-get install python curl sudo git`
+`apt-get install -y python-pip python curl sudo git`
 
 Download installer and install.
 ---------------
@@ -70,6 +70,11 @@ or type:
 IMPORTANT: The next comand remover modules folder. Move that before install or reinstall.
 
 `python install.py`
+
+`pip install ka-lite-static`
+ 
+`kalite start`
+
 
 
 Reconfigure interfaces, repeating the step above "Configure Network Interface", and them type:
