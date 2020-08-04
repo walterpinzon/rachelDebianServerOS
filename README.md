@@ -39,9 +39,16 @@ To look at the list of interface names, type.
 `ifconfig -a`
 
 `su`
+
+
 `nano /etc/network/interfaces`
+
 Add the following lines replacing eth0 with the name of the ethernet interface.
+
 `    auto eth0`
+
+`    auto wlan0`
+
 `    iface eth0 inet dhcp`
 
 `/etc/init.d/networking restart`
@@ -105,15 +112,17 @@ NOW COPY YOUR MODULES IN /var/www/modules/
 
 `rm -rf /var/kiwix/`
 
-`cp /home/pi/kiwix/ /var/`
+`cp -r /home/pi/kiwix/* /var/`
 
-`cp /home/pi/es-kalite/finish_install.sh /var/www/modules/es-kalite/finish_install.sh  `
+`cp -r /home/pi/es-kalite/finish_install.sh /var/www/modules/es-kalite/finish_install.sh  `
 
 `sh /var/www/modules/es-kalite/finish_install.sh  `
 
 `chmod -R 777 /var/www/`
 
 `init 6`
+
+REPEAT Configure Network Interface.
 
 All default username and passwords will be rachel/rachel unless noted differently.
 
