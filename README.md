@@ -112,9 +112,10 @@ NOW COPY YOUR MODULES IN /var/www/modules/
 
 `rm -rf /var/kiwix/`
 
-`cp -r /home/pi/kiwix/* /var/`
+`cp -r /home/pi/rachelDebianServerOS/files/kiwix/* /var/`
 
-`cp -r /home/pi/es-kalite/finish_install.sh /var/www/modules/es-kalite/finish_install.sh  `
+`cp -r /home/pi/rachelDebianServerOS/files/es-kalite/finish_install.sh
+ /var/www/modules/es-kalite/finish_install.sh  `
 
 `sh /var/www/modules/es-kalite/finish_install.sh  `
 
@@ -123,19 +124,20 @@ NOW COPY YOUR MODULES IN /var/www/modules/
 `init 6`
 
 REPEAT Configure Network Interface.
+---------------
 
 All default username and passwords will be rachel/rachel unless noted differently.
 
 
 
 
-python installer.py
+##python installer.py
 
-apt upgrade
+#apt upgrade
 
-apt-get install -y python-pip
+#apt-get install -y python-pip
 
-pip install ka-lite-static
+#pip install ka-lite-static
 
 
 
