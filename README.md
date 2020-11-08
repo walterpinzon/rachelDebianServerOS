@@ -15,10 +15,15 @@ Prerequisites
 Debian Jessie Server
 
 python
+
 curl
+
 sudo
+
 ntp
+
 git
+
 
 Download Debian Jessie.
 
@@ -76,7 +81,7 @@ or type:
 
 IMPORTANT: The next comand remover modules folder. Move that before install or reinstall.
 
-`python install.py`
+`python installer.py`
 
 `pip install ka-lite-static`
  
